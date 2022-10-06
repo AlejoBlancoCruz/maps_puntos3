@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+    <Document>
+        <Placemark>
+            <name />
+            <Point>
+                <coordinates>-15.378327369689941,27.981208766088688</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name />
+            <Point>
+                <coordinates>-15.377683639526369,27.98821978020314</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name />
+            <Point>
+                <coordinates>-15.383992195129396,27.993146166033643</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="Linea">
+            <LineString>
+                <coordinates>-15.378327369689941,27.981208766088688 -15.377683639526369,27.98821978020314 -15.383992195129396,27.993146166033643 </coordinates>
+            </LineString>
+            <Style>
+                <LineStyle>
+                    <color>#ff0000ff</color>
+                    <width>5</width>
+                </LineStyle>
+            </Style>
+        </Placemark>
+    </Document>
+</kml>

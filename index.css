@@ -1,0 +1,197 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 5%;
+    height: 120px;
+    background-color: #011424;
+    box-shadow: 0px 0px 5px 2px #ce3a43;
+    color: white;
+    font-size:calc(12px + 0.3vw);
+}
+/*
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    background-color: azure;
+}
+*/
+#logo{
+    margin-top: 10px;
+    width: 80px;
+}
+
+h1{
+    padding-top: 1%; 
+    padding-left: 2%;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}
+#buscador{
+    color: white;
+    text-decoration: underline;
+    align-self: center;
+    padding-top: 5px;
+    padding-left: 5%;
+}
+
+article {
+    display: flex;
+    height: 80%;
+    padding-top: 10px;
+}
+
+#contenedor_mapa {
+    width: 50vw;
+    margin: 1em;
+}
+
+#ruta {
+    width: 50vw;
+    margin:auto;
+    padding: 10px;
+}
+
+#mapa {
+    width: 50vw;
+    height: 60vh;
+    background-color: aquamarine;
+}
+
+
+.contenedor {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 3fr) 2fr;
+    grid-template-rows: fit-content(90%);
+   
+    background-color: #11588fe3;
+    
+}
+
+/* .contenedor {
+    overflow: hidden;
+} */
+
+.elemento {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 5px;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    height: 30px;
+    color: white;
+}
+.fila{
+    color: white;
+}
+
+#dibujo {
+    background-color: rgb(65, 4, 4);
+    color: white;
+}
+
+@media (max-width: 900px) {
+    header{        
+        width: 90vw;
+    }
+    
+    article {
+        display:inline-block;
+        align-items: center;
+        width: 100%;
+    }
+    #mapa {
+        width: 90vw;
+        height: 60vh;
+        margin-left: 2.5em;
+        background-color: aquamarine;
+    }
+    #ruta {
+        width: 90vw;
+        margin-left: 2.5em;
+    }
+}
+
+
+
+@media (max-width: 635px) {
+    header {
+        flex-wrap: wrap;
+        height: fit-content;
+        font-size: 20px;
+    }
+    #logo{
+        margin-top: 10px;
+        width: 80px;
+    }
+    
+    h1{
+        font-size: large;
+    }
+    
+    img{
+        width: 90px;
+        height: 90px;
+    }
+    
+    #mapa {
+        width: 80vw;
+        height: 60vh;
+        margin-left: 1.5em;
+        background-color: aquamarine;
+    }
+    #ruta {
+        width: 80vw;
+        margin-left: 2.5em;
+    }
+
+}
+@media (max-width: 512px) {
+    header h1{
+        flex-direction: column;
+        justify-content:flex-start;
+        font-size: 20px;
+    }
+
+    #ruta {
+        margin-left: 1em;
+        margin-right: 1em;
+        font-size: small;
+        }
+    .elemento{
+        height: fit-content;
+
+    }    
+}
+@media (max-width: 390px) {
+
+    header h1{
+        font-size: 16px;
+    }
+    .elemento {
+        font-size: 10px;
+    }
+    #ruta {
+        width: 95%;
+        height: 10vh;
+        margin: 5px 0px 5px 0px;
+        font-size: 10px;   
+
+    }
+    #mapa {
+        transform:scale(1.0);
+        -ms-transform:scale(1.0); /* IE 9 */
+        -moz-transform:scale(1.0); /* Firefox */
+        -webkit-transform:scale(1.0); /* Safari and Chrome */
+        -o-transform:scale(1.0); /* Opera */
+    }
+
+   
+}
